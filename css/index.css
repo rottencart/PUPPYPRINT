@@ -1,0 +1,262 @@
+/* font style */
+@font-face {
+    font-family: 'poppins-reg';
+    src: url('font/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('font/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url('font/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-extralight';
+    src: url('font/Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('font/Poppins-Bold.ttf') format('truetype');
+}
+
+/* parent elements */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    width: auto;
+    height: 3000px;
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: transparent; /* Make the background color transparent */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    padding-top: 5px; /* Add some spacing between the logo and the links */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    padding-top: 10px; /* Add some spacing between the logo and the links */
+    padding-left: 110px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-links {
+    flex-grow: 1; /* Allow the navigation links to take up remaining space */
+    text-align: left; /* Center-align the navigation links */
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    color: #000000;
+    text-align: center;
+    padding-top: 0px; /* Add some spacing between the logo and the links */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'poppins-light';
+    transition: font-family 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for font family and color */
+    max-width: 100px; /* Constrain the width of the links */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    color: #04AA6D; /* Change color on hover */
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    color: #000000; /* Change color for active link */
+    font-family: 'poppins-semibold'; /* Change font family for active link */
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none; /* Initially hide the hamburger menu on larger screens */
+    cursor: pointer;
+    padding: 10px 20px; /* Add padding to all sides */
+}
+
+/* Hamburger bar styles */
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #303030; /* Default color for the bars */
+}
+
+/* Button styles */
+.btn {
+    margin-top: 10px; /* Add some spacing between the logo and the links */
+    margin-left: 10px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    padding: 5px 5px; /* Adjust button padding */
+    background-color: #303030; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 100px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+}
+
+.btn:hover {
+    background-color: #037b4d; /* Button background color on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation links on smaller screens */
+    }
+
+    .hamburger-menu {
+        display: block; /* Display the hamburger menu icon on smaller screens */
+    }
+
+    .logo {
+        width: 100px; /* Adjust the width as needed */
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+        padding-top: 10px; /* Add some spacing between the logo and the links */
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+}
+
+    .btn {
+        margin-top: 5px; /* Add some spacing between the logo and the links */
+        margin-left: 5px;
+        margin-right: -5px;
+        margin-bottom: 5px;
+        padding: 5px 5px; /* Adjust button padding */
+        background-color: #303030; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 100px; /* Apply border radius */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+        margin-left: auto; /* Align button to the right */
+    }
+
+    .hero-content {
+        padding: 50px;
+        text-align: left;
+    }
+}
+
+/* Hero section styles */
+.hero {
+    font-family: 'poppins-reg';
+    position: relative;
+    background-color: #F2F2F2; /* Example background color */
+    height: 450px; /* Adjust height to fit the viewport height */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden; /* Ensure the image doesn't overflow the hero section */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Hero content styles */
+.hero-content {
+    padding: 50px;
+    text-align: left;
+}
+
+/* Hero image styles */
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+/* Example color variations for each letter */
+.puppyprint .letter1,
+.puppyprint .letter2,
+.puppyprint .letter3,
+.puppyprint .letter4,
+.puppyprint .letter5,
+.puppyprint .letter6,
+.puppyprint .letter7,
+.puppyprint .letter8,
+.puppyprint .letter9,
+.puppyprint .letter10,
+.puppyprint .letter11 {
+    font-family: 'poppins-bold';
+}
+
+.puppyprint .letter1 { color: #F89423; }
+.puppyprint .letter2 { color: #F04A32; }
+.puppyprint .letter3 { color: #12959B; }
+.puppyprint .letter4 { color: #207688; }
+.puppyprint .letter5 { color: #8C4C89; }
+.puppyprint .letter6 { color: #F04A32; }
+.puppyprint .letter7 { color: #F89423; }
+.puppyprint .letter8 { color: #8C4C89; }
+.puppyprint .letter9 { color: #F04A32; }
+.puppyprint .letter10 { color: #12959B; }
+.puppyprint .letter11 { color: #12959B; }
+.puppyprint .other { font-family: 'poppins-extralight'; }
+
+p { font-family: 'poppins-light'; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this style for the navbar when scrolled */
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+}

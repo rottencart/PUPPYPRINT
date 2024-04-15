@@ -114,7 +114,7 @@ html, body {
 }
 
 /* Button styles */
-.btn {
+.btn_cart {
     margin-top: 10px; /* Add some spacing between the logo and the links */
     margin-left: 10px;
     margin-right: 110px;
@@ -128,8 +128,28 @@ html, body {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
 }
 
-.btn:hover {
+.btn_order {
+    position: absolute; /* Set position to absolute */
+    bottom: 50px; /* Distance from the bottom */
+    left: 50px; /* Distance from the left */
+    font-family: 'poppins-reg';
+    font-size: medium;
+    padding: 15px 30px; /* Adjust button padding */
+    color: #303030; /* Button text color */
+    border: 3px solid #303030; /* Border style, color, and width */
+    border-radius: 100px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+}
+
+.btn_cart:hover {
     background-color: #037b4d; /* Button background color on hover */
+}
+
+.btn_order:hover {
+    background-color: #303030; /* Button background color on hover */
+    color: white;
 }
 
 /* Media query for smaller screens */
@@ -151,7 +171,7 @@ html, body {
         padding-bottom: 10px;
 }
 
-    .btn {
+    .btn_cart {
         margin-top: 5px; /* Add some spacing between the logo and the links */
         margin-left: 5px;
         margin-right: -5px;
@@ -164,11 +184,6 @@ html, body {
         cursor: pointer; /* Change cursor to pointer on hover */
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
         margin-left: auto; /* Align button to the right */
-    }
-
-    .hero-content {
-        padding: 50px;
-        text-align: left;
     }
 }
 
@@ -187,6 +202,7 @@ html, body {
 .hero-content {
     padding: 50px;
     text-align: left;
+    margin-top: 40px;
 }
 
 /* Hero image styles */
@@ -201,34 +217,38 @@ html, body {
 }
 
 /* Example color variations for each letter */
-.puppyprint .letter1,
-.puppyprint .letter2,
-.puppyprint .letter3,
-.puppyprint .letter4,
-.puppyprint .letter5,
-.puppyprint .letter6,
-.puppyprint .letter7,
-.puppyprint .letter8,
-.puppyprint .letter9,
-.puppyprint .letter10,
-.puppyprint .letter11 {
+.headline .letter1,
+.headline .letter2,
+.headline .letter3,
+.headline .letter4,
+.headline .letter5,
+.headline .letter6,
+.headline .letter7,
+.headline .letter8,
+.headline .letter9,
+.headline .letter10,
+.headline .letter11 {
     font-family: 'poppins-bold';
 }
 
-.puppyprint .letter1 { color: #F89423; }
-.puppyprint .letter2 { color: #F04A32; }
-.puppyprint .letter3 { color: #12959B; }
-.puppyprint .letter4 { color: #207688; }
-.puppyprint .letter5 { color: #8C4C89; }
-.puppyprint .letter6 { color: #F04A32; }
-.puppyprint .letter7 { color: #F89423; }
-.puppyprint .letter8 { color: #8C4C89; }
-.puppyprint .letter9 { color: #F04A32; }
-.puppyprint .letter10 { color: #12959B; }
-.puppyprint .letter11 { color: #12959B; }
-.puppyprint .other { font-family: 'poppins-extralight'; }
+.headline .letter1 { color: #F89423; }
+.headline .letter2 { color: #F04A32; }
+.headline .letter3 { color: #12959B; }
+.headline .letter4 { color: #207688; }
+.headline .letter5 { color: #8C4C89; }
+.headline .letter6 { color: #F04A32; }
+.headline .letter7 { color: #F89423; }
+.headline .letter8 { color: #8C4C89; }
+.headline .letter9 { color: #F04A32; }
+.headline .letter10 { color: #12959B; }
+.headline .letter11 { color: #12959B; }
+.headline .other { font-family: 'poppins-extralight'; }
 
 p { font-family: 'poppins-light'; }
+
+.headline {
+    font-size: 50px;
+}
 
 
 

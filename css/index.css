@@ -250,6 +250,25 @@ p { font-family: 'poppins-light'; }
     font-size: 50px;
 }
 
+/* Second section styles */
+.second {
+    font-family: 'poppins-reg';
+    position: relative;
+    margin-top: 20px;
+    background-color: #F2F2F2; /* Example background color */
+    height: 450px; /* Adjust height to fit the viewport height */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden; /* Ensure the image doesn't overflow the hero section */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Hero content styles */
+.second-content {
+    padding: 50px;
+    text-align: left;
+    margin-top: 40px;
+}
+
 
 
 

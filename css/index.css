@@ -152,41 +152,6 @@ html, body {
     color: white;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide the navigation links on smaller screens */
-    }
-
-    .hamburger-menu {
-        display: block; /* Display the hamburger menu icon on smaller screens */
-    }
-
-    .logo {
-        width: 100px; /* Adjust the width as needed */
-        height: auto; /* Automatically adjust height to maintain aspect ratio */
-        padding-top: 10px; /* Add some spacing between the logo and the links */
-        padding-left: 20px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-}
-
-    .btn_cart {
-        margin-top: 5px; /* Add some spacing between the logo and the links */
-        margin-left: 5px;
-        margin-right: -5px;
-        margin-bottom: 5px;
-        padding: 5px 5px; /* Adjust button padding */
-        background-color: #303030; /* Button background color */
-        color: white; /* Button text color */
-        border: none; /* Remove button border */
-        border-radius: 100px; /* Apply border radius */
-        cursor: pointer; /* Change cursor to pointer on hover */
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
-        margin-left: auto; /* Align button to the right */
-    }
-}
-
 /* Hero section styles */
 .hero {
     font-family: 'poppins-reg';
@@ -216,7 +181,6 @@ html, body {
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
-/* Example color variations for each letter */
 .headline .letter1,
 .headline .letter2,
 .headline .letter3,
@@ -252,32 +216,62 @@ p { font-family: 'poppins-light'; }
 
 /* Second section styles */
 .second {
-    font-family: 'poppins-reg';
+    font-family: 'poppins-extralight';
     position: relative;
-    margin-top: 20px;
-    background-color: #F2F2F2; /* Example background color */
-    height: 450px; /* Adjust height to fit the viewport height */
+    margin-top: 10px;
+    background-color: transparent; /* Example background color */
+    height: auto; /* Adjust height to fit the viewport height */
     width: 100%; /* Cover the entire width of the screen */
     overflow: hidden; /* Ensure the image doesn't overflow the hero section */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
+    }
 
-/* Hero content styles */
+/* Second content styles */
 .second-content {
-    padding: 50px;
-    text-align: left;
-    margin-top: 40px;
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }
 
+.content-one {
+    display: flex;
+    justify-content: center;
+}
 
+.card {
+    margin: 10px auto; /* Horizontally center the card */
+    padding: 10px;
+    background-color: transparent;
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center;
+}
 
+.second-image {
+    width: 100%; /* Adjusted */
+    height: auto; /* Adjusted */
+    object-fit: contain;
+}
 
+.second-h1 {
+    font-size: medium;
+    margin-top: 0; /* Remove default margin */
+}
 
+.second-p {
+    font-size: small;
+    margin-top: 0; /* Remove default margin */
+}
 
-
-
-
-
+.content-two {
+    display: flex;
+    justify-content: center;
+    background-color: antiquewhite;
+    height: 500px;
+    width: auto;
+}
 
 
 

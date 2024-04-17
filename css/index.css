@@ -1,4 +1,4 @@
-/* font style */
+/* Font styles */
 @font-face {
     font-family: 'poppins-reg';
     src: url('font/Poppins-Regular.ttf') format('truetype');
@@ -24,7 +24,7 @@
     src: url('font/Poppins-Bold.ttf') format('truetype');
 }
 
-/* parent elements */
+/* Parent elements */
 html, body {
     margin: 0;
     padding: 0;
@@ -152,6 +152,11 @@ html, body {
     color: white;
 }
 
+/* function for blurry navbar */
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+}
+
 /* Hero section styles */
 .hero {
     font-family: 'poppins-reg';
@@ -208,8 +213,6 @@ html, body {
 .headline .letter11 { color: #12959B; }
 .headline .other { font-family: 'poppins-extralight'; }
 
-p { font-family: 'poppins-light'; }
-
 .headline {
     font-size: 50px;
 }
@@ -220,10 +223,9 @@ p { font-family: 'poppins-light'; }
     position: relative;
     margin-top: 10px;
     background-color: transparent; /* Example background color */
-    height: auto; /* Adjust height to fit the viewport height */
     width: 100%; /* Cover the entire width of the screen */
     overflow: hidden; /* Ensure the image doesn't overflow the hero section */
-    }
+}
 
 /* Second content styles */
 .second-content {
@@ -233,6 +235,7 @@ p { font-family: 'poppins-light'; }
     text-align: center;
 }
 
+/* First content inside second */
 .content-one {
     display: flex;
     justify-content: center;
@@ -265,31 +268,39 @@ p { font-family: 'poppins-light'; }
     margin-top: 0; /* Remove default margin */
 }
 
+/* Second content inside second */
 .content-two {
-    display: flex;
-    justify-content: center;
-    background-color: antiquewhite;
-    height: 500px;
-    width: auto;
+    width: auto; /* Adjusted */
 }
 
+.wevalueyou {
+    text-align: left;
+    margin-top: 0;
+}
 
+.wevalueyou .one {
+    font-family: 'poppins-extralight';
+}
 
+.wevalueyou .two {
+    font-family: 'poppins-bold';
+}
 
+.third-p {
+    margin-top: 0;
+    font-size: small;
+    text-align: left;
+}
 
+.carde {
+    margin: 10px; /* Horizontally center the card */
+    padding: 10px;
+    background-color: rgb(230, 245, 255);
+    height: 100px;
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/* Add this style for the navbar when scrolled */
-.navbar.scrolled {
-    backdrop-filter: blur(10px);
+.carde-one, 
+.carde-two {
+    display: flex;
 }

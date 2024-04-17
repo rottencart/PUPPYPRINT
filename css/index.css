@@ -32,7 +32,7 @@ html, body {
 
 .index {
     width: auto;
-    height: 3000px;
+    height: 5000px; /* make it auto after cration! */
 }
 
 /* Add a black background color to the top navigation */
@@ -260,12 +260,13 @@ html, body {
 
 .second-h1 {
     font-size: medium;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
 }
 
 .second-p {
     font-size: small;
-    margin-top: 0; /* Remove default margin */
+    margin-top: 0; 
+    text-align: justify;
 }
 
 /* Second content inside second */
@@ -289,18 +290,71 @@ html, body {
 .third-p {
     margin-top: 0;
     font-size: small;
-    text-align: left;
+    text-align: justify;
 }
 
 .carde {
     margin: 10px; /* Horizontally center the card */
     padding: 10px;
-    background-color: rgb(230, 245, 255);
     height: 100px;
     width: 100%;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+}
+
+.carde img {
+    height: 100px;
+    width: 100px; 
+    margin-right: 10px; /* Add some space between image and text */
 }
 
 .carde-one, 
 .carde-two {
     display: flex;
+}
+
+.third-image {
+    width: 100%; /* Adjusted */
+    height: auto; /* Adjusted */
+    object-fit: contain; 
+}
+
+.carde h2,
+.carde p {
+    margin: 0; /* Remove default margins */
+}
+
+.third-h2 {
+    font-family: 'poppins-light';
+    font-size: 20px;
+}
+
+.third-p2 {
+    font-family: 'poppins-extralight';
+    font-size: 13px;
+}
+
+.second-en {
+    flex-direction: column; 
+    text-align: left;
+}
+
+/* Third section styles */
+.third {
+    font-family: 'poppins-extralight';
+    position: relative;
+    margin-top: 10px;
+    height: 500px;
+    background-color: #477D63; /* Example background color */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Third content styles */
+.third-content {
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }

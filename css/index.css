@@ -391,8 +391,7 @@ html, body {
 
 .thirdy-one {
     color: white;
-    text-align: left;
-    
+    text-align: left;  
 }
 
 .t1 {
@@ -426,4 +425,23 @@ html, body {
 .btn_third:hover {
     background-color: #303030; /* Button background color on hover */
     color: white;
+}
+
+/* Fourth section styles */
+.fourth {
+    font-family: 'poppins-extralight';
+    position: relative;
+    margin-top: 10px;
+    height: 600px;
+    background-color: transparent; /* Example background color */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden;
+}
+
+/* Third content styles */
+.fourth-content {
+    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }

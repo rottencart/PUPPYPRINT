@@ -344,7 +344,7 @@ html, body {
     font-family: 'poppins-extralight';
     position: relative;
     margin-top: 10px;
-    height: 500px;
+    height: 600px;
     background-color: #477D63; /* Example background color */
     width: 100%; /* Cover the entire width of the screen */
     overflow: hidden;
@@ -357,4 +357,73 @@ html, body {
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
+}
+
+.third-pic {
+    position: absolute; /* Position absolute to be able to use right */
+    top: 65px;
+    bottom: 65px;
+    left: 70%;
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+
+}
+
+.third-content img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    height: auto; 
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.thirdy {
+    position: absolute;
+    right: 40%;
+    left: 40px;
+    top: 65px;
+    height: 500px;
+}
+
+.thirdy button {
+    display: flex;
+    left: 0px;
+}
+
+.thirdy-one {
+    color: white;
+    text-align: left;
+    
+}
+
+.t1 {
+    font-family: 'poppins-extralight';
+}
+
+.t2 {
+    font-family: 'poppins-light';
+}
+
+.thirdy-two {
+    color: white;
+    text-align: left;
+}
+
+.btn_third {
+    position: absolute; /* Set position to absolute */
+    bottom: 50px; /* Distance from the bottom */
+    left: 50px; /* Distance from the left */
+    font-family: 'poppins-reg';
+    font-size: medium;
+    padding: 15px 30px; /* Adjust button padding */
+    border: 0px solid; /* Border style, color, and width */
+    border-radius: 100px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+    background-color: rgb(255, 255, 255); /* Transparent background */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.btn_third:hover {
+    background-color: #303030; /* Button background color on hover */
+    color: white;
 }

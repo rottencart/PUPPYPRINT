@@ -32,7 +32,7 @@ html, body {
 
 .index {
     width: auto;
-    height: 5000px; /* make it auto after cration! */
+    height: auto; /* make it auto after cration! */
 }
 
 /* Add a black background color to the top navigation */
@@ -155,6 +155,7 @@ html, body {
 /* function for blurry navbar */
 .navbar.scrolled {
     backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 /* Hero section styles */
@@ -349,6 +350,7 @@ html, body {
     width: 100%; /* Cover the entire width of the screen */
     overflow: hidden;
     box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+    z-index: 1; /* Ensure it's above other content */
 }
 
 /* Third content styles */
@@ -391,6 +393,7 @@ html, body {
 .thirdy-one {
     color: white;
     text-align: left;  
+    font-size: 50px;
 }
 
 .t1 {
@@ -403,7 +406,8 @@ html, body {
 
 .thirdy-two {
     color: white;
-    text-align: left;
+    text-align: justify;
+
 }
 
 .btn_third {
@@ -430,11 +434,13 @@ html, body {
 .fourth {
     font-family: 'poppins-extralight';
     position: relative;
-    margin-top: 10px;
     height: auto;
-    background-color: transparent; /* Example background color */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #F2F2F2; /* Example background color */
     width: 100%; /* Cover the entire width of the screen */
     overflow: hidden;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
 }
 
 /* Fourth content styles */
@@ -470,4 +476,63 @@ html, body {
     margin: 10px;
     transition: transform 0.5s ease;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Fifth section styles */
+.fifth {
+    font-family: 'poppins-extralight';
+    position: relative;
+    height: 1000px;
+    background-color: transparent; /* Example background color */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden;
+}
+
+/* Fifth content styles */
+.fifth-content {
+    padding: 10px;
+}
+
+.headline-fifth .letter1 { color: #F89423; }
+.headline-fifth .letter2 { color: #F04A32; }
+.headline-fifth .letter3 { color: #12959B; }
+.headline-fifth .letter4 { color: #207688; }
+.headline-fifth .letter5 { color: #8C4C89; }
+.headline-fifth .letter6 { color: #F04A32; }
+.headline-fifth .letter7 { color: #F89423; }
+.headline-fifth .letter8 { color: #8C4C89; }
+.headline-fifth .letter9 { color: #F04A32; }
+.headline-fifth .letter10 { color: #12959B; }
+
+.headline-fifth .letter11 {
+    font-family: 'poppins-extralight';
+    font-size: 13px;
+    position: absolute;
+    top:  75px;
+    left: 390px;
+}
+
+.headline-fifth {
+    font-size: 65px;
+    font-family: 'poppins-bold';
+}
+
+.fifth-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.fifth-p {
+    text-align: justify;
+}
+
+.fifth-text {
+    position: absolute;
+    right: 50%;
+    left: 40px;
 }

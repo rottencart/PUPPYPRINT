@@ -66,6 +66,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .thirdy-one {
+        color: white;
+        text-align: left;
+        font-size: xx-large;  
+    }
 }
 
 /* If screen reaches 600px */

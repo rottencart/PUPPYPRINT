@@ -490,7 +490,7 @@ html, body {
 
 /* Fifth content styles */
 .fifth-content {
-    padding: 10px;
+    padding: 0px;
 }
 
 .headline-fifth .letter1 { color: #F89423; }
@@ -535,4 +535,12 @@ html, body {
     position: absolute;
     right: 50%;
     left: 40px;
+}
+
+.fifth-brands {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }

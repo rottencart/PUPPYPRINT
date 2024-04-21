@@ -1,0 +1,60 @@
+
+
+
+.vertical-line{
+    border-left: 6px solid rgba(226, 223, 223, 0.486);
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 150px;
+}
+
+.contact-details{
+    margin-top: 100px;
+    margin-left: 10px;
+    font-family: 'poppins-light';
+}
+    
+.icon-add{
+    margin-top: 240px;
+    margin-right: 0px;
+    margin-left: 250px;
+    font-family: 'poppins-light';
+}
+
+#add-only{
+    font-size: 14px;  
+    margin-top: -2.5%;
+}
+
+.icon-map{
+    margin-top: 80px;
+    margin-left:0px ;
+    margin-right: 10px;
+
+}
+.column{
+    float: left;
+    width: auto;
+    padding: 10px;
+}
+.row::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.contact-footer{
+    margin-left:10px ;
+    margin-right: 10px; 
+    margin-bottom: 10px;
+    background-color: rgb(102, 133, 161);
+}
+#TLC{
+    margin-left: 20px;
+    padding-left: 40px;
+}
+#number{
+    padding: 30px;
+
+}

@@ -40,4 +40,26 @@ document.querySelectorAll('.photocards-container').forEach(function(container) {
     });
 });
 
+// JavaScript to synchronize the animation of both companies
+window.onload = function () {
+    var companyOne = document.querySelector('.company-one');
+    var companyTwo = document.querySelector('.company-two');
+    var fifthBrands = document.querySelector('.fifth-brands');
+
+    // Get the width of the fifth-brands container
+    var fifthBrandsWidth = fifthBrands.offsetWidth;
+
+    // Set the initial width of the company containers
+    companyOne.style.width = fifthBrandsWidth + 'px';
+    companyTwo.style.width = fifthBrandsWidth + 'px';
+
+    // Adjust the width of the companies if the window is resized
+    window.onresize = function () {
+        fifthBrandsWidth = fifthBrands.offsetWidth;
+        companyOne.style.width = fifthBrandsWidth + 'px';
+        companyTwo.style.width = fifthBrandsWidth + 'px';
+    };
+};
+
+
 

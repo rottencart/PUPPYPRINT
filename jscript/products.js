@@ -7,59 +7,61 @@ window.addEventListener('scroll', function() {
     }
 });
 
-document.querySelectorAll('.photocards-container').forEach(function(container) {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+var currentLink = null;
 
-    container.addEventListener('mousedown', function(event) {
-        isDown = true;
-        startX = event.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-    });
+function showAllProducts() {
+    resetBold();
+    hideAllProducts();
+    document.querySelector('.features-products-d').classList.add('show');
+    document.querySelector('.all-products-d').classList.add('show');
+    currentLink = 'all-products-link';
+    toggleBold(currentLink);
+}
 
-    container.addEventListener('mouseleave', function() {
-        isDown = false;
-    });
+function showPhotoPrinting() {
+    resetBold();
+    hideAllProducts();
+    document.querySelector('.photo-products-d').classList.add('show');
+    currentLink = 'photo-printing-link';
+    toggleBold(currentLink);
+}
 
-    container.addEventListener('mouseup', function() {
-        isDown = false;
-    });
+function showLabels() {
+    resetBold();
+    hideAllProducts();
+    document.querySelector('.labels-products-d').classList.add('show');
+    currentLink = 'labels-packaging-link';
+    toggleBold(currentLink);
+}
 
-    container.addEventListener('mousemove', function(event) {
-        if (!isDown) return;
-        event.preventDefault();
-        const x = event.pageX - container.offsetLeft;
-        const walk = (x - startX) * 2; // Adjust scroll speed
-        container.scrollLeft = scrollLeft - walk;
-    });
+function showBusiness() {
+    resetBold();
+    hideAllProducts();
+    document.querySelector('.business-products-d').classList.add('show');
+    currentLink = 'business-link';
+    toggleBold(currentLink);
+}
 
-    container.addEventListener('wheel', function(event) {
-        event.preventDefault();
-        container.scrollLeft += event.deltaY;
+function hideAllProducts() {
+    var productSections = document.querySelectorAll('.features-products-d, .all-products-d, .photo-products-d, .labels-products-d, .business-products-d');
+    productSections.forEach(function(section) {
+        section.classList.remove('show');
     });
+}
+
+function toggleBold(id) {
+    var link = document.getElementById(id);
+    var currentFontWeight = window.getComputedStyle(link).getPropertyValue('font-weight');
+    link.style.fontWeight = (currentFontWeight === 'bold') ? 'normal' : 'bold';
+}
+
+function resetBold() {
+    if (currentLink !== null) {
+        var link = document.getElementById(currentLink);
+        link.style.fontWeight = 'normal';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    showAllProducts(); // Call the function when the DOM content is loaded
 });
-
-// JavaScript to synchronize the animation of both companies
-window.onload = function () {
-    var companyOne = document.querySelector('.company-one');
-    var companyTwo = document.querySelector('.company-two');
-    var fifthBrands = document.querySelector('.fifth-brands');
-
-    // Get the width of the fifth-brands container
-    var fifthBrandsWidth = fifthBrands.offsetWidth;
-
-    // Set the initial width of the company containers
-    companyOne.style.width = fifthBrandsWidth + 'px';
-    companyTwo.style.width = fifthBrandsWidth + 'px';
-
-    // Adjust the width of the companies if the window is resized
-    window.onresize = function () {
-        fifthBrandsWidth = fifthBrands.offsetWidth;
-        companyOne.style.width = fifthBrandsWidth + 'px';
-        companyTwo.style.width = fifthBrandsWidth + 'px';
-    };
-};
-
-
-

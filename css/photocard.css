@@ -168,176 +168,6 @@ html, body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.first-one {
-    margin-top: 65px;
-    text-align: center;
-    z-index: 1000;
-}
-
-.first-one a {
-    font-size: small;
-    color: black;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-.first-two {
-    background-color: #F2F2F2;
-    margin-top: 10px;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.content-one {
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-}
-
-.card {
-    margin: 0px auto; /* Horizontally center the card */
-    padding: 10px;
-    padding-top: 0px;
-    background-color: transparent;
-    width: 50%;
-    display: flex;
-    flex-direction: column; /* Change to column layout */
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center;
-}
-
-.second-image {
-    width: 100%; /* Adjusted */
-    height: auto; /* Adjusted */
-    object-fit: contain;
-}
-
-.second-h1 {
-    font-size: medium;
-    margin-top: 0; 
-}
-
-.second-p {
-    font-size: small;
-    margin-top: 0; 
-    text-align: justify;
-}
-
-.new-h2 {
-   padding-top: 0px;
-   padding-left: 30px;
-   font-weight: 300;
-   font-size: x-large;
-}
-
-.photolinks a.active {
-    color: #000000; /* Change color for active link */
-    font-family: 'poppins-semibold'; /* Change font family for active link */
-}
-
-.prod-h2 {
-    font-weight: 300;
-    margin-top: -10px;
-    padding-left: 30px;
-    font-size: x-large;
-}
-.prod-h2-c {
-    font-weight: 300;
-    padding-left: 30px;
-    font-size: x-large;
-}
-
-.photocards-d {
-    display: flex;
-    flex-direction: row; /* Change to row layout */
-    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-    justify-content: center; /* Center align the cards */
-    padding-bottom: 25px;
-}
-
-.cards-d {
-    min-width: 250px;
-    min-height: 400px;
-    background-color: #ffffff;
-    border-radius: 25px;
-    margin: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.cards-d-p {
-    min-width: 250px;
-    min-height: 400px;
-    background-color: #fffbea;
-    border-radius: 25px;
-    margin: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.cards-d-l {
-    min-width: 250px;
-    min-height: 400px;
-    background-color: #eaf5ff;
-    border-radius: 25px;
-    margin: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-.cards-d-b {
-    min-width: 250px;
-    min-height: 400px;
-    background-color: #ffeaea;
-    border-radius: 25px;
-    margin: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
-}
-
-/* Add transition for opacity and height */
-.features-products-d,
-.all-products-d,
-.photo-products-d,
-.labels-products-d,
-.business-products-d {
-    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-}
-
-/* Show the element when its opacity is 1 */
-.features-products-d.show,
-.all-products-d.show,
-.photo-products-d.show,
-.labels-products-d.show,
-.business-products-d.show {
-    opacity: 1;
-    height: auto;
-}
-
-.photolinks a.active {
-    font-weight: bold;
-}
-
-.photolinks a {
-    transition: font-weight 0.3s ease-in-out; /* Smooth transition for font weight */
-}
-
-/* Second section styles */
-.second {
-    font-family: 'poppins-extralight';
-    position: relative;
-    margin-top: 10px;
-    background-color: transparent; /* Example background color */
-    width: 100%; /* Cover the entire width of the screen */
-    overflow: hidden; /* Ensure the image doesn't overflow the hero section */
-}
-
-.third-p {
-    margin-top: 0;
-    font-size: small;
-    text-align: justify;
-}
-
 .carde {
     margin: 10px; /* Horizontally center the card */
     padding: 10px;
@@ -383,6 +213,88 @@ html, body {
     flex-direction: column; 
     text-align: left;
 }
+
+.brand-one {
+    margin-top: 65px;
+    text-align: left;
+    z-index: 1000;
+}
+
+.brand-two {
+    background-color: #F2F2F2;
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.brand-one a {
+    font-size: small;
+    color: black;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+.border {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.raw {
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Sixth section styles */
 .sixth {

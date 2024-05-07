@@ -65,3 +65,50 @@ function resetBold() {
 document.addEventListener('DOMContentLoaded', function() {
     showAllProducts(); // Call the function when the DOM content is loaded
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mainImage = document.getElementById("main-image");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener("click", function() {
+            const imageUrl = thumbnail.getAttribute("src");
+            mainImage.setAttribute("src", imageUrl);
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector(".slides");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slides.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - slides.offsetLeft;
+        scrollLeft = slides.scrollLeft;
+    });
+
+    slides.addEventListener("mouseleave", () => {
+        isDown = false;
+    });
+
+    slides.addEventListener("mouseup", () => {
+        isDown = false;
+    });
+
+    slides.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slides.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scroll speed
+        slides.scrollLeft = scrollLeft - walk;
+    });
+
+    // Disable default mousewheel scrolling
+    slides.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        slides.scrollLeft += e.deltaY * 2; // Adjust scroll speed
+    });
+});

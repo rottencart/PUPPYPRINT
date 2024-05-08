@@ -245,12 +245,13 @@ html, body {
 }
 
 .brand-details {
-    position: absolute;
-    right: 0%;
     background-color: #FAFAFA;
     height:100%;
-    width: 230px;
+    width: auto;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
 }
 
 .info-one {
@@ -267,15 +268,13 @@ html, body {
 
 .info-one h1 {
     font-size: small;
-    position: absolute;
     left: 10px;
 }
 
 .info-one ul {
     font-size: 10px;
-    padding-top: 20px;
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 10px;
     list-style-type: none; /* Remove default bullets */
 }
 
@@ -307,6 +306,7 @@ html, body {
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .photodisplay {

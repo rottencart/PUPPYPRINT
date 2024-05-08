@@ -73,34 +73,3 @@
         font-size: xx-large;  
     }
 }
-
-/* If screen reaches 600px */
-@media screen and (max-width: 600px) { 
-    .headline {
-        font-size: x-large;
-    }
-
-    .hero-content {
-        padding: 25px;
-        text-align: left;
-        margin-top: 35px;
-    }
-
-    .btn_order {
-        font-family: 'poppins-reg';
-        font-size: small;
-        padding: 10px 20px; /* Adjust button padding */
-        color: #303030; /* Button text color */
-        border: 3px solid #303030; /* Border style, color, and width */
-        border-radius: 100px; /* Apply border radius */
-        cursor: pointer; /* Change cursor to pointer on hover */
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
-        background-color: rgba(255, 255, 255, 0); /* Transparent background */
-    }
-
-    .thirdy-two {
-        color: white;
-        font-size: small;
-    }
-}
-

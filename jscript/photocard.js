@@ -112,3 +112,25 @@ document.addEventListener("DOMContentLoaded", function() {
         slides.scrollLeft += e.deltaY * 2; // Adjust scroll speed
     });
 });
+
+// Function to open the popup
+function openPopup() {
+    var popup = document.getElementById("popupContainer");
+    popup.classList.add("show"); // Add 'show' class to apply transition effect
+}
+
+// Function to close the popup
+function closePopup() {
+    var popup = document.getElementById("popupContainer");
+    popup.classList.remove("show"); // Remove 'show' class to hide the popup with transition
+}
+
+// Attach click event listener to the "Add to cart" button
+document.addEventListener("DOMContentLoaded", function() {
+    var addToCartButtons = document.querySelectorAll(".cart");
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            openPopup(); // Open the popup when the button is clicked
+        });
+    });
+});

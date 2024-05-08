@@ -320,6 +320,7 @@ html, body {
     width: 100%;
     overflow: hidden; /* Ensure the image doesn't overflow the container */
     margin: 0 auto; /* Horizontally center the container */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .main img {
@@ -345,14 +346,104 @@ html, body {
 
 .thumbnail {
     cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
     margin-right: 5px; /* Add some space between thumbnails */
     height: 110px; /* Ensure thumbnails take full height of the container */
     object-fit: cover; /* Ensure thumbnails cover the container */
 }
 
+.card-info {
+    position: relative;
+    margin-left: 20px;
+    height: 90%;
+    width: 410px;
+}
 
+/* Button styles */
+.cart {
+    position: absolute; /* Set position to absolute */
+    bottom: 10px; /* Distance from bottom */
+    left: 10px; /* Distance from left */
+    font-family: 'poppins-reg';
+    padding: 7px 13px; /* Adjust button padding */
+    background-color: #303030; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 100px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+}
 
+.cart:hover {
+    background-color: #037b4d; /* Button background color on hover */
+}
 
+.fifth {
+    font-family: 'poppins-extralight';
+    position: relative;
+    height: auto;
+    background-color: transparent; /* Example background color */
+    width: 100%; /* Cover the entire width of the screen */
+    overflow: hidden;
+}
+
+.related {
+    height: 100%;
+    width: 100%;
+}
+
+.related-d {
+    display: flex;
+    flex-direction: row; /* Change to row layout */
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: center; /* Center align the cards */
+    padding-bottom: 25px;
+}
+
+.prod-h2-c {
+    font-family: 'poppins-extralight';
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 23px;
+}
+
+.cards-d {
+    min-width: 250px;
+    min-height: 400px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+/* Popup Container Styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%; /* Set fixed height of 1000px */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1000;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.popup-container.show {
+    display: flex;
+    opacity: 1; /* Set opacity to 1 when the popup is shown */
+}
+
+.white-window {
+    position: absolute;
+    bottom: 0px;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+}
 
 
 

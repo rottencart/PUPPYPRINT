@@ -134,3 +134,45 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to open the popup
+    function openPopup() {
+        var popup = document.getElementById("popupContainer");
+        popup.classList.add("show"); // Add 'show' class to apply transition effect
+        document.body.style.overflow = "hidden"; // Prevent scrolling of background content
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        var popup = document.getElementById("popupContainer");
+        popup.classList.remove("show"); // Remove 'show' class to hide the popup with transition
+        document.body.style.overflow = ""; // Re-enable scrolling of background content
+    }
+
+    // Attach click event listener to the "Add to cart" button
+    var addToCartButtons = document.querySelectorAll(".cart");
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            openPopup(); // Open the popup when the button is clicked
+        });
+    });
+
+    // Close the popup when the "Escape" key is pressed
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closePopup();
+        }
+    });
+
+    // Prevent scrolling of background content when the mouse is over the popup
+    var popupContainer = document.getElementById("popupContainer");
+    popupContainer.addEventListener("mouseenter", function() {
+        document.body.style.overflow = "hidden"; // Prevent scrolling of background content
+    });
+
+    // Re-enable scrolling of background content when the mouse leaves the popup
+    popupContainer.addEventListener("mouseleave", function() {
+        document.body.style.overflow = ""; // Re-enable scrolling of background content
+    });
+});

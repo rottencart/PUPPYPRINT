@@ -437,6 +437,14 @@ html, body {
     opacity: 1; /* Set opacity to 1 when the popup is shown */
 }
 
+.order-title {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-family: 'poppins-light';
+    color: white;
+}
+
 .white-window {
     position: absolute;
     bottom: 0px;

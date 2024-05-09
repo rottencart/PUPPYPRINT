@@ -437,20 +437,43 @@ html, body {
     opacity: 1; /* Set opacity to 1 when the popup is shown */
 }
 
-.order-title {
-    position: relative;
-    height: 50px;
+.white-window {
+    position: absolute;
+    bottom: 0%;
     width: 100%;
+    height: 70%;
+    background-color: white;
+}
+
+.order-title {
+    width: 100%;
+    height: 100%;
     font-family: 'poppins-light';
     color: white;
 }
 
-.white-window {
+.close-popup {
     position: absolute;
-    bottom: 0px;
-    height: 400px;
+    right: 10px;
+    font-size: 25px; /* Set font size */
+    font-family: 'poppins-light';
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.order-details {
+    font-size: 25px; /* Set font size */
+    position: absolute;
+    left: 10px;
+}
+
+.popup {
+    position: relative;
+    height: auto;
+    background-color: transparent;
     width: 100%;
-    background-color: white;
+    overflow: hidden;
 }
 
 

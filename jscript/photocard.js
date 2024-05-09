@@ -176,3 +176,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.style.overflow = ""; // Re-enable scrolling of background content
     });
 });
+
+function closePopup() {
+    var popupContainer = document.getElementById("popupContainer");
+    popupContainer.classList.remove("show"); // Remove the "show" class to hide the popup
+}

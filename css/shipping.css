@@ -1,17 +1,79 @@
-h2{
+
+    /*Shipping Information Section */
+#si{
     margin-top: 80px;
-   text-align: center;
+    text-align: center;
     font-family: 'poppins-light';   
 }
 
-.info{
-
-   
+.info{ 
     background-color: #eaf5ff;
     height: 400px;
+    width: auto;  
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'poppins-light';
+
+}
+
+    /* Purchased Section */
+.purchased{
+    background-color: #fbfbfc;
+    height: auto;
     width: auto;  
     margin-bottom: 50px;
     margin-top: 20px;
     font-family: 'poppins-light';
 
 }
+
+#pi{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    text-align:left;
+    font-family: 'poppins-light';   
+}
+
+.purchased-items {
+    display:list-item;
+    
+}
+
+.purchased-items > div{
+    padding: 20px;
+    background-color: #fdfbfb;
+    border: solid rgb(133, 130, 130);
+    height: 40px;
+    width: 80px;   
+    margin-bottom: 60px;
+    margin-left: 80px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-family: 'poppins-light';
+    border-radius: 0px;
+    
+
+}
+
+span.item-name{
+
+    margin-left: 200px;
+    text-wrap: balance;
+    position: absolute;
+    color:black;
+
+}
+
+    /* Input information Section */
+.input-info {
+
+    background-color:rgb(216, 208, 208);
+    height: 400px;
+    width: auto;  
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-family: 'poppins-light';
+}
+
+

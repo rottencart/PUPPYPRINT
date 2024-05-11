@@ -52,25 +52,69 @@
         </div>
 
         <div class="purchased">
-
-            <h3 id="pi">Purchased Items</h3>
+            <h2 id="pi">Purchased Items</h2>
 
             <div class="purchased-items">  
                 <div class=""><span class="item-name">Photo Card 1</span></div> 
                 <div class=""><span class="item-name">Photo Card 2</span></div>
                 <div class=""><span class="item-name">Bussiness Card</span></div>
                 <div class=""><span class="item-name">Bussiness Card</span></div>         
-            </div>
-        
-
-
-
-
+            </div>  
         </div>
 
        
         <div class="input-info">
-            <div>
-                
-            </div>
+            <h3>Input Shipping Information</h3>
+            <form action=" ">
+                <label for="fname">First Name:</label>
+                <input type="text" class="col" id="fname" name="firstname" placeholder=" ">
+                <br>
+                <label for="lname">Last Name:</label>
+                <input type="text" class="col" id="lname" name="lastname" placeholder=" ">
+                <br>
+                <label for="contact">Contact:</label>
+                <input type="number"class="col" id="contact" name="contactNumber" placeholder=" ">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" class="col" id="email" placeholder=" " name="email">
+                <br>
+                <label for="courier">Courier Provider:</label>
+                    <select class="col" id="courier" name="courier">
+                        <option value="lalamove">Lalamove</option>
+                        <option value="j&t">J&T Express</option>
+                        <option value="grab">Grab Express</option>
+                        <option value="lbc">LBC Express</option>
+                        <option value="jrs">JRS Express</option>
+                    </select>
+                <br>
+                <label for="payment">Preferred Payment Method:</label>
+                    <select class="col" id="payment" name="payment">
+                        <option value="bank">Bank Transfer</option>
+                        <option value="gcash">GCash</option>
+                        <option value="maya">Maya</option>
+                        <option value="cod">Cash on Delivery</option>
+                        </select>
+                <br>
+                <label for="region">Select Region:</label>
+                    <select class="col" id="region" name="region">
+                        <option value="r1">Region I - Ilocos Region</option>
+                        <option value="r2">Region II - Cagayan Valley</option>
+                        <option value="r3">Region III - Central Luzon</option> 
+                        <option value="r4A">Region IV-A - CALABARZON</option>     
+                        <option value="mima">MIMAROPA Region</option>
+                        <option value="r5">Region V - Bicol Region</option>
+                        <option value="r6">Region VI - Western Visayas</option>
+                        <option value="r7">Region VII - Central Visayas</option> 
+                        <option value="r8">Region VIII - Eastern Visayas</option>     
+                        <option value="r9">Region IX - Zamboanga Peninsula</option>
+                        <option value="r10">Region X - Northern Mindanao</option>
+                        <option value="r11">Region XI - Davao Region</option>
+                        <option value="r12">Region XII - SOCCSKSARGEN</option>
+                        <option value="r13">Region XIII - Caraga</option> 
+                        <option value="ncr">NCR - National Capital Region</option>     
+                        <option value="bar">BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                    </select>
+                <br>
+                <input type="submit" value="Submit" class="col">
+            </form>
         </div>

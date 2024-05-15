@@ -74,18 +74,28 @@ span.item-name{
     margin-bottom: 50px;
     margin-top: 50px;
     font-family: 'poppins-light';
+    
 }
 
+h3{
+
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+
 input[type=text], [type=email],[type=number], select {
-    width: 30%;
-    padding: 12px;
+    width: 80%;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 0px;
-    margin-bottom: 16px;
-    margin-left: 40px;
-    resize: vertical;
+    margin-bottom: 5px;
+    margin-left: 0px;
+
+    
   }
 
   label{
@@ -97,29 +107,48 @@ input[type=text], [type=email],[type=number], select {
     margin-top: 0px;
     margin-bottom: 16px;
     margin-left: 40px;
-    resize: vertical;
+    
     
   }
   
-  input[type=submit] {
-    background-color: #04AA6D;
+  input[type=save] {
+    background-color: #171817;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-left: 40px;
-    margin-bottom: 40px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    margin-left: 55px;
+    width: 80px;
+    text-align: center;
+    font-family: 'poppins-light';
+    font-size: medium;
     cursor: pointer;
+    border: 2px solid black;
+
+    
   }
   
-  input[type=submit]:hover {
-    background-color: #45a049;
+  input[type=save]:hover {
+    background-color: #f3f8f3;
+    color: black;
+    border-color: #020202;
+    
   }
 
-  .col{
-    margin-top: 6px;
-    margin-left: 100px;
+  .note{
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    font-family: 'poppins-light';
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+
   }
+
+ 
+
+ 
+  
   
  
 

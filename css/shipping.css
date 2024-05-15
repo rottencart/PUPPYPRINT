@@ -44,8 +44,8 @@
     padding: 20px;
     background-color: #fdfbfb;
     border: solid rgb(133, 130, 130);
-    height: 40px;
-    width: 80px;   
+    height: 60px;
+    width: 100px;   
     margin-bottom: 60px;
     margin-left: 80px;
     margin-top: 0px;
@@ -69,11 +69,87 @@ span.item-name{
 .input-info {
 
     background-color:rgb(216, 208, 208);
-    height: 400px;
+    height: auto;
     width: auto;  
     margin-bottom: 50px;
     margin-top: 50px;
     font-family: 'poppins-light';
+    
 }
+
+h3{
+
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+
+input[type=text], [type=email],[type=number], select {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+
+    
+  }
+
+  label{
+    width: 0%;
+    padding: 12px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    
+    
+  }
+  
+  input[type=save] {
+    background-color: #171817;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 20px;
+    margin-left: 55px;
+    width: 80px;
+    text-align: center;
+    font-family: 'poppins-light';
+    font-size: medium;
+    cursor: pointer;
+    border: 2px solid black;
+
+    
+  }
+  
+  input[type=save]:hover {
+    background-color: #f3f8f3;
+    color: black;
+    border-color: #020202;
+    
+  }
+
+  .note{
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    font-family: 'poppins-light';
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+ 
+
+ 
+  
+  
+ 
 
 

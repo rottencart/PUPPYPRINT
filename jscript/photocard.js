@@ -177,7 +177,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
 function closePopup() {
     var popupContainer = document.getElementById("popupContainer");
     popupContainer.classList.remove("show"); // Remove the "show" class to hide the popup

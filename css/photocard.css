@@ -443,19 +443,21 @@ html, body {
     width: 100%;
     height: 70%;
     background-color: white;
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .order-title {
+    position: absolute;
+    top: 25%;
     width: 100%;
-    height: 100%;
+    height: auto;
     font-family: 'poppins-light';
-    color: white;
 }
 
 .close-popup {
     position: absolute;
     right: 10px;
-    font-size: 25px; /* Set font size */
+    font-size: 20px; /* Set font size */
     font-family: 'poppins-light';
     background-color: transparent;
     text-decoration: none;
@@ -463,9 +465,10 @@ html, body {
 }
 
 .order-details {
-    font-size: 25px; /* Set font size */
+    font-size: 20px; /* Set font size */
     position: absolute;
     left: 10px;
+    color: white;
 }
 
 .popup {
@@ -476,7 +479,15 @@ html, body {
     overflow: hidden;
 }
 
+.window {
+    height: 1000px;
+    width: 100%;
+}
 
+.p-size {
+    height: 100px;
+    width: 100%;
+}
 
 
 

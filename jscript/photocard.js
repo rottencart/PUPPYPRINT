@@ -181,3 +181,21 @@ function closePopup() {
     var popupContainer = document.getElementById("popupContainer");
     popupContainer.classList.remove("show"); // Remove the "show" class to hide the popup
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".p-image");
+
+    images.forEach(image => {
+        image.addEventListener("click", function() {
+            // Remove 'zoomed' class from all images
+            images.forEach(img => {
+                if (img !== image) {
+                    img.classList.remove("zoomed");
+                }
+            });
+
+            // Toggle 'zoomed' class on the clicked image
+            image.classList.toggle("zoomed");
+        });
+    });
+});

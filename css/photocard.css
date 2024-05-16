@@ -359,7 +359,6 @@ html, body {
     width: 410px;
 }
 
-/* Button styles */
 .cart {
     position: absolute; /* Set position to absolute */
     bottom: 10px; /* Distance from bottom */
@@ -451,21 +450,21 @@ html, body {
     top: 25%;
     width: 100%;
     height: auto;
-    font-family: 'poppins-light';
+    font-family: 'poppins-reg';
 }
 
 .close-popup {
     position: absolute;
     right: 10px;
-    font-size: 20px; /* Set font size */
-    font-family: 'poppins-light';
+    font-size: 20px;
+    font-family: 'poppins-reg';
     background-color: transparent;
     text-decoration: none;
     color: white;
 }
 
 .order-details {
-    font-size: 20px; /* Set font size */
+    font-size: 20px; 
     position: absolute;
     left: 10px;
     color: white;
@@ -480,17 +479,224 @@ html, body {
 }
 
 .window {
-    height: 1000px;
+    height: auto;
     width: 100%;
 }
 
 .p-size {
-    height: 100px;
+    height: auto;
     width: 100%;
 }
 
+.white-window h2 {
+    font-family: 'poppins-extralight';
+    font-size:15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
 
+.p-image {
+    margin-left: 5px; 
+    height: 150px; 
+    object-fit: cover;
+    cursor: pointer; /* Add cursor pointer for better UX */
+}
 
+.p-image.zoomed {
+    transform: scale(1.2); /* Adjust the scale value for desired zoom level */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.lab {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align items horizontally */
+}
+
+.p-material {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.p-material label {
+    font-family: 'poppins-extralight';
+    font-size: small;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.p-quantity {
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.p-quantity label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'poppins-extralight';
+    font-size: small;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.p-quantity label span:first-child {
+    margin-right: 15px;
+}
+
+.p-quantity label span:last-child {
+    margin-left: auto;
+}
+
+.p-upload {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+.upload-one {
+    height: auto;
+    width: 100%;
+}
+
+.upload-two {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.click-upload {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.u-one {
+    height: auto;
+    width: auto;
+}
+
+.u-image {
+    margin-left: 5px; 
+    height: 80px; 
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.u-one h2 {
+    margin-left: 5px;
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-family: 'poppins-light';
+}
+
+.u-one p {
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: 'poppins-reg';
+}
+
+.u-one p span {
+    color: #0070C0;
+}
+
+.upload-two label {
+    font-family: 'poppins-extralight';
+    font-size: small;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.view {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.view-one {
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 30%;
+}
+
+.view-two {
+    background-color: #FAFAFA;
+    height: 100%;
+    width: 70%;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.checkone {
+    height: 500px;
+    width: 100%;
+}
+
+.checktwo {
+    height: auto;
+    width: auto;
+    right: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-right: 20px;
+    align-self: flex-end;
+}
+
+.but {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    width: auto;
+
+}
+
+.but p {
+    font-family: 'poppins-light';
+    font-size: x-small;
+    text-align: right;
+}
+
+.but p span {
+    color: #0070C0;
+}
+
+.bottom {
+    margin-left: 10px;
+    height: 35px;
+    width: 210px;
+    font-family: 'poppins-reg';
+    padding: 7px 13px; /* Adjust button padding */
+    background-color: #303030; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 100px; /* Apply border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for button */
+}
+
+.bottom:hover {
+    background-color: #037b4d; /* Button background color on hover */
+}
 
 
 

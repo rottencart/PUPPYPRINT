@@ -110,8 +110,9 @@
                     <tr>
                         <td><label for="region">Select Region:</label></td>
                             <td>
-                                <select class=" " id="region" name="region">
-                                    <option value="r1">Region I - Ilocos Region</option>
+                                <select class=" " id="region" size="1" name="region">
+                                    <option value="" selected="selected"></option>
+                            <!--    <option value="r1">Region I - Ilocos Region</option>
                                     <option value="r2">Region II - Cagayan Valley</option>
                                     <option value="r3">Region III - Central Luzon</option> 
                                     <option value="r4A">Region IV-A - CALABARZON</option>     
@@ -127,20 +128,34 @@
                                     <option value="r13">Region XIII - Caraga</option> 
                                     <option value="ncr">NCR - National Capital Region</option>     
                                     <option value="bar">BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</option>
+                            -->
+                                </select>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td><label for="province">Select Province:</label></td>
+                            <td> 
+                                <select class=" " id="province" size="1"  name="province">
+                                    <option value=" " selected="selected"></option>    
                                 </select>
                             </td>
                     </tr>
                     <tr>
                         <td><label for="city">Select City:</label></td>
                             <td> 
-                                <select class=" " id="city" name="city">
-                                    <option value=" ">Bank Transfer</option>
-                                    <option value=" ">GCash</option>
-                                    <option value=" ">Maya</option>
-                                    <option value=" ">Cash on Delivery</option>
+                                <select class=" " id="city" size="1" name="city">
+                                    <option value=" " selected="selected"></option>    
                                 </select>
                             </td>
                     </tr> 
+                    <tr>
+                        <td><label for="brgy">Select Barangay:</label></td>
+                            <td> 
+                                <select class=" " id="brgy" size="1" name="brgy">
+                                    <option value=" " selected="selected"></option>    
+                                </select>
+                            </td>
+                    </tr>
                     <tr>
                         <td><label for="street">Street Address:</label></td>
                         <td><input type="text" class=" " id="street" name="street" placeholder=" "></td>
@@ -164,6 +179,10 @@
             </form>
               
         </div>
+
+      
+
+        <script src="jscript/shipping.js"></script>
            
     </body>
 </html>

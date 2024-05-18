@@ -199,3 +199,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function triggerFileInput() {
+    document.getElementById('fileInput').click();
+}
+
+function handleFileUpload(input) {
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+        const uploadedImage = e.target.result;
+        const imageElement = document.createElement('img');
+        imageElement.src = uploadedImage;
+        const viewTwo = document.getElementById('viewTwo');
+        viewTwo.innerHTML = ''; // Clear previous content
+        viewTwo.appendChild(imageElement);
+    };
+
+    reader.readAsDataURL(file);
+}

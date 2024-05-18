@@ -88,14 +88,17 @@
                         <div class="p-upload">
                             <div class="upload-one">
                                 <h2>Upload File:</h2>
-                                <div class="click-upload">
+                                <div class="click-upload" onclick="triggerFileInput()">
                                     <img class="u-image" src="resources/U1.png">
                                     <div class="u-one">
                                         <h2>Click here to upload file</h2>
-                                        <p>Note: Your file will we printed out in chosen <span>printing style method</span>. Make sure the selected size is match to your file orientation.</p>
+                                        <p>Note: Your file will be printed out in the chosen <span>printing style method</span>. Make sure the selected size matches your file orientation.</p>
                                     </div>
                                 </div>
+                                <!-- Hidden file input -->
+                                <input type="file" id="fileInput" style="display: none;" accept="image/*" onchange="handleFileUpload(this)" capture="camera" multiple="false">
                             </div>
+
                             <div class="upload-two">
                                 <h2>Printing Style Method:</h2>
 
@@ -110,7 +113,7 @@
                             <div class="view-one">
                                 <h2>View for Selected Order Details.</h2>
                             </div>
-                            <div class="view-two">
+                            <div class="view-two" id="viewTwo">
                                 <h2>View for the order in frame.</h2>
                             </div>
                         </div>
@@ -172,7 +175,7 @@
 
                         <div class="brand-details">
                             <div class="info-one">
-                                <h1>Products</h1>
+                                <h1><span>Products</span><span><a href="#" class="quest">?</a></span></h1>
     
                                 <div class="text">
                                     <ul>
@@ -183,18 +186,18 @@
                                 </div>
                             </div>
                             <div class="info-one">
-                                <h1>Delivery Options</h1>
+                                <h1><span>Delivery Options</span><span><a href="#" class="quest">?</a></span></h1>
     
                                 <div class="text">
                                     <ul>
-                                        <li class="led">LBC</li>
-                                        <li class="led">J&T</li>
-                                        <li class="led">DHL</li>
+                                        <li class="led"><span>LBC</span><span>minimum of 45 pesos</span></li>
+                                        <li class="led"><span>J&T</span><span>minimum of 45 pesos</span></li>
+                                        <li class="led"><span>DHL</span><span>minimum of 45 pesos</span></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="info-one">
-                                <h1>Specifications</h1>
+                                <h1><span>Specifications</span><span><a href="#" class="quest">?</a></span></h1>
     
                                 <div class="text">
                                     <ul>

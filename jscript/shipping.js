@@ -142,52 +142,279 @@ const regionInfo = {
         
       },
     },
+
     "Region II - Cagayan Valley":{
 
+        Batanes:{
+
+        },
+        Cagayan:{
+
+        },
+        Isabela:{
+
+        },
+        "Nueva Vizcaya":{
+
+        },
+        "Quirino Province":{
+
+        }
     },
+
     "Region III - Central Luzon":{
 
+        Aurora:{
+
+        }, 
+        Bataan:{
+
+        }, 
+        Bulacan:{
+
+        }, 
+        Pampanga:{
+
+        }, 
+        "Nueva Ecija":{
+
+        }, 
+        Tarlac:{
+
+        },
+        Zambales:{
+
+        }
     },
     "Region IV-A - CALABARZON":{
+        Batangas:{
+
+        }, 
+        Cavite:{
+
+        }, 
+        Laguna:{
+
+        }, 
+        Quezon:{
+
+        }, 
+        Rizal:{
+
+        }
 
     },   
     "MIMAROPA Region":{
+        "Mindoro Occidental":{
+
+        }, 
+        "Mindoro Oriental":{
+
+        }, 
+        Marinduque:{
+
+        }, 
+        Romblon:{
+
+        },
+        Palawan:{
+
+        }
         
     },
+
     "Region V - Bicol Region":{
+        Albay:{
+
+        },
+        "Camarines Norte":{
+
+        },
+        "Camarines Sur":{
+
+        },
+        Catanduanes:{
+
+        },
+        Sorsogon:{
+
+        },
+        Masbate:{
+
+        }
 
     },
     "Region VI - Western Visayas":{
+        Aklan:{
+
+        }, 
+        Antique:{
+
+        }, 
+        Capiz:{
+
+        }, 
+        Guimaras:{
+
+        }, 
+        Iloilo:{
+
+        },
+        "Negros Occidental":{
+
+        }
 
     },
     "Region VII - Central Visayas":{
+        Bohol:{
+
+        }, 
+        Cebu:{
+
+        }, 
+        "Negros Oriental":{
+
+        }, 
+        Siquijor:{
+
+        }
 
     },
     "Region VIII - Eastern Visayas":{
+        Biliran:{
 
+        }, 
+        "Eastern Samar":{
+
+        }, 
+        Leyte:{
+
+        },
+        "Northern Samar":{
+
+        }, 
+        Samar:{
+
+        }, 
+        "Southern Leyte":{
+
+        }
     },
     "Region IX - Zamboanga Peninsula":{
+        "Zamboanga del Norte":{
 
+        },
+        "Zamboanga del Sur":{
+
+        }, 
+        "Zamboanga Sibugay":{
+
+        }, 
     },
     "Region X - Northern Mindanao":{
+        Bukidnon:{
 
+        }, 
+        Camiguin:{
+
+        }, 
+        "Lanao del Norte":{
+
+        }, 
+        "Misamis Occidental":{
+
+        },
+        "Misamis Oriental":{
+
+        }
     },
     "Region XI - Davao Region":{
+        "Davao de Oro (Compostela Valley)":{
 
+        }, 
+        "Davao del Norte":{
+
+        }, 
+        "Davao del Sur":{
+
+        }, 
+        "Davao Occidental":{
+
+        }, 
+        "Davao Oriental":{
+
+        }
     },
     "Region XII - SOCCSKSARGEN":{
+        Cotabato:{
 
+        }, 
+        Sarangani:{
+
+        }, 
+        "South Cotabato":{
+            
+        }, 
+        "Sultan Kudarat":{
+
+        }
     },
     "Region XIII - Caraga":{
+        "Agusan del Norte":{
 
+        }, 
+        "Agusan del Sur":{
+
+        }, 
+        "Dinagat Islands":{
+
+        }, 
+        "Surigao del Norte":{
+
+        },  
+        "Surigao del Sur":{
+
+        }
     },
     "NCR - National Capital Region":{
         "Metro Manila": {
-            "Pasig City": ["Bagong Ilog", "Bagong Katipunan", "Bambang", "Buting"],
-             Pateros: ["Aguho", "Magtangol","Martires Del 96","Poblacion"],
-      },
+            "Caloocan City": [], 
+            "Las Piñas":[],
+            Makati:[], 
+            Malabon:[],
+            Mandaluyong:[],
+            Manila:[],
+            Marikina:[],
+            Muntinlupa:[],
+            Navotas:[],
+            Parañaque:[],
+            "Pasay City":[],
+            Pasig:["Bagong Ilog", "Bagong Katipunan", "Bambang", "Buting"],
+            Pateros:["Aguho", "Magtangol","Martires Del 96","Poblacion"],
+            "Quezon City":[],
+            "San Juan":[],
+            Taguig:[],
+            Valenzuela:[],
+
+        }            
     },  
+
     "BARMM-Bangsamoro Autonomous Region in Muslim Mindanao":{
+        Basilan:{
+
+        }, 
+        "Lanao del Sur":{
+
+        }, 
+        Maguindanao:{
+
+        }, 
+        Sulu:{
+
+        }, 
+        "Tawi-Tawi":{
+
+        }
 
     }
 

@@ -1206,47 +1206,249 @@ const regionInfo = {
     },
     "Zamboanga Peninsula":{
         "Zamboanga del Norte":{
+            Baliguian                   :[],
+            Dapitan                     :[],
+            Dipolog                     :[],
+            Godod                       :[],
+            Gutalac                     :[],
+            "Jose Dalman"               :[],
+            Kalawit                     :[],
+            Katipunan                   :[],
+            "La Libertad"               :[],
+            Labason                     :[],
+            "Leon B. Postigo"           :[],
+            Liloy                       :[],
+            Manukan                     :[],
+            Mutia                       :[],
+            Piñan                       :[],
+            Polanco                     :[],
+            "President Manuel A. Roxas" :[],
+            Rizal                       :[],
+            Salug                       :[],
+            "Sergio Osmeña Sr."         :[],
+            Siayan                      :[],
+            Sibuco                      :[],
+            Sibutad                     :[],
+            Sindangan                   :[],
+            Siocon                      :[],
+            Sirawai                     :[],
+            Tampilisan                  :[],
 
         },
         "Zamboanga del Sur":{
-
+            Aurora              :[],
+            Bayog               :[],
+            Dimataling          :[],
+            Dinas               :[],
+            Dumalinao           :[],
+            Dumingag            :[],
+            Guipos              :[],
+            Josefina            :[],
+            Kumalarang          :[],
+            Labangan            :[],
+            Lakewood            :[],
+            Lapuyan             :[],
+            Mahayag             :[],
+            Margosatubig        :[],
+            Midsalip            :[],
+            Molave              :[],
+            Pagadian            :[],
+            Pitogo              :[],
+            "Ramon Magsaysay"   :[],
+            "San Miguel"        :[],
+            "San Pablo"         :[],
+            Sominot             :[],
+            Tabina              :[],
+            Tambulig            :[],
+            Tigbao              :[],
+            Tukuran             :[],
+            "Vincenzo A. Sagun" :[],
+            "Zamboanga City"    :[],
         }, 
         "Zamboanga Sibugay":{
-
+            Alicia          :[],
+            Buug            :[],
+            Diplahan        :[],
+            Imelda          :[],
+            Ipil            :[],
+            Kabasalan       :[],
+            Mabuhay         :[],
+            Malangas        :[],
+            Naga            :[],
+            Olutanga        :[],
+            Payao           :[],
+            "Roseller Lim"  :[],
+            Siay            :[],
+            Talusan         :[],
+            Titay           :[],
+            Tungawan        :[],
         }, 
     },
     "Northern Mindanao":{
         Bukidnon:{
-
+            Baungon             :[],
+            Cabanglasan         :[],
+            Damulog             :[],
+            Dangcagan           :[],
+            "Don Carlos"        :[],
+            Impasugong          :[],
+            Kadingilan          :[],
+            Kalilangan          :[],
+            Kibawe              :[],
+            Kitaotao            :[],
+            Lantapan            :[],
+            Libona              :[],
+            Malaybalay          :[],
+            Malitbog            :[],
+            "Manolo Fortich"    :[],
+            Maramag             :[],
+            Pangantucan         :[],
+            Quezon              :[],
+            "San Fernando"      :[],
+            Sumilao             :[],
+            Talakag             :[],
+            Valencia            :[],
         }, 
         Camiguin:{
+            Catarman        :[],
+            Guinsiliban     :[],
+            Mahinog         :[],
+            Mambajao        :[],
+            Sagay           :[],
 
         }, 
         "Lanao del Norte":{
-
+            Bacolod         :[],
+            Baloi           :[],
+            Baroy           :[],
+            "Iligan City"   :[],
+            Kapatagan       :[],
+            Kauswagan       :[],
+            Kolambugan      :[],
+            Lala            :[],
+            Linamon         :[],
+            Magsaysay       :[],
+            Maigo           :[],
+            Matungao        :[],
+            Munai           :[],
+            Nunungan        :[],
+            "Pantao Ragat"  :[],
+            Pantar          :[],
+            "Poona Piagapo" :[],
+            Salvador        :[],
+            Sapad           :[],
+            "Sultan Naga Dimaporo"  :[],
+            Tagoloan        :[],
+            Tangcal         :[],
+            Tubod           :[],
         }, 
         "Misamis Occidental":{
-
+            Aloran              :[],
+            Baliangao           :[],
+            Bonifacio           :[],
+            Calamba             :[],
+            Clarin              :[],
+            Concepcion          :[],
+            "Don Victoriano Chiongbian" :[],
+            Jimenez             :[],
+            "Lopez Jaena"       :[],
+            Oroquieta           :[],
+            Ozamiz              :[],
+            Panaon              :[],
+            Plaridel            :[],
+            "Sapang Dalaga"     :[],
+            Sinacaban           :[],
+            Tangub              :[],
+            Tudela              :[],
         },
         "Misamis Oriental":{
-
+            Alubijid            :[],
+            Balingasag          :[],
+            Balingoan           :[],
+            Binuangan           :[],
+            "Cagayan de Oro City":[],
+            Claveria            :[],
+            "El Salvador"       :[],
+            Gingoog             :[],
+            Gitagum             :[],
+            Initao              :[],
+            Jasaan              :[],
+            Kinoguitan          :[],
+            Lagonglong          :[],
+            Laguindingan        :[],
+            Libertad            :[],
+            Lugait              :[],
+            Magsaysay           :[],
+            Manticao            :[],
+            Medina              :[],
+            Naawan              :[],
+            Opol                :[],
+            Salay               :[],
+            Sugbongcogon        :[],
+            Tagoloan            :[],
+            Talisayan           :[],
+            Villanueva          :[],
         }
     },
     "Davao Region":{
         "Davao de Oro (Compostela Valley)":{
-
+            Compostela  :[],
+            Laak        :[],    
+            Mabini      :[],
+            Maco        :[],
+            Maragusan   :[],
+            Mawab       :[],
+            Monkayo     :[],
+            Montevista  :[],    
+            Nabunturan  :[],
+            "New Bataan":[],
+            Pantukan    :[],
         }, 
         "Davao del Norte":{
-
+            Asuncion            :[],
+            "Braulio E. Dujali" :[],
+            Carmen              :[],
+            Kapalong            :[],
+            "New Corella"       :[],
+            Panabo              :[],
+            Samal               :[],
+            "San Isidro"        :[],
+            "Santo Tomas"       :[],
+            Tagum               :[],
+            Talaingod           :[],
         }, 
         "Davao del Sur":{
-
+            Bansalan            :[],
+            "Davao City"        :[],
+            Digos               :[],
+            Hagonoy             :[],
+            Kiblawan            :[],
+            Magsaysay           :[],
+            Malalag             :[],
+            Matanao             :[],
+            Padada              :[],
+            "Santa Cruz"        :[],
+            Sulop               :[],
         }, 
         "Davao Occidental":{
-
+            "Don Marcelino"     :[],
+            "Jose Abad Santos"  :[],
+            Malita              :[],
+            "Santa Maria"       :[],
+            Sarangani           :[],
         }, 
         "Davao Oriental":{
-
+            Baganga             :[],
+            Banaybanay          :[],
+            Boston              :[],
+            Caraga              :[],
+            Cateel              :[],
+            "Governor Generoso" :[],
+            Lupon               :[],
+            Manay               :[],
+            Mati                :[],
+            "San Isidro"        :[],
+            Tarragona           :[],
         }
     },
     "SOCCSKSARGEN":{
@@ -1640,14 +1842,6 @@ const regionInfo = {
     }
   };
 
-  window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
 
   window.onload = function () {
   
@@ -1673,7 +1867,7 @@ const regionInfo = {
         citySelection.length = 1; 
         brgySelection.length = 1; 
     
-        // if (e.target.selectedIndex < 1) return; // done
+      
     
         // todo: Load province by looping over regionInfo
         for (let province in regionInfo[e.target.value]) {

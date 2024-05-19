@@ -31,8 +31,11 @@
 .icon-map{
     margin-top: 80px;
     margin-left:0px ;
+    margin-bottom: 25px;
     margin-right: 10px;
-
+    border-color: black;
+    border-style: solid;
+    border-radius: 25px;
 }
 .column{
     float: left;

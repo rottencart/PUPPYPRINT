@@ -1704,9 +1704,9 @@ const regionInfo = {
             brgy[i]
           );
         }
-      };
+    };
       
-    }
+}
 
 
 

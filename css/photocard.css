@@ -296,9 +296,34 @@ html, body {
 }
 
 .text {
+    width: 100%;
+}
+
+.text li {
     display: flex;
-    align-items: flex-start;
-    width: max-content;
+    justify-content: space-between;
+}
+
+.text li span:first-child {
+    margin-right: auto;
+}
+
+.text li span:last-child {
+    margin-left: auto;
+}
+
+.info-one h1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-one h1 span:first-child {
+    margin-right: auto;
+}
+
+.info-one h1 span:last-child {
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 .info-two {
@@ -698,7 +723,11 @@ html, body {
     background-color: #037b4d; /* Button background color on hover */
 }
 
-
+.quest {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
 
 
 
@@ -818,3 +847,4 @@ html, body {
     display: flex;
     justify-content: center;
 }
+

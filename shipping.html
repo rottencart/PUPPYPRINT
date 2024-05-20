@@ -45,9 +45,51 @@
 
         <h2 id="si">Shipping Information</h2>
 
-        <div class="info">
-            <div>
-
+        <div class="info-out"> 
+            
+            <div class="map-out">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1690485042504!2d121.09598417414945!3d14
+                    .589441277351682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7671b164a0b%3A0x4959ba8a60ceca5a!2sICON%20Graphics%20Inc
+                    .!5e0!3m2!1sen!2sph!4v1713668749672!5m2!1sen!2sph" 
+                    width="auto" height="400" style="border:0px; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>   
+            </div>
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <td><label>Name:</label></td>
+                        <td><label id="nameOut"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contact:</label></td>
+                        <td><label id="contactOut"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><label id="emailOut"></td>                     
+                    </tr>           
+      
+                    <tr >   
+                        <td class="add-out"><label><br><br>Shipping Address:</label></td>             
+                    </tr>
+                  
+                    <tr>
+                        <td>
+                            <label class="out" id="streetOut">Blk 3, lot 50, phase 5 Rawhouse Subdivision</label>
+                            <label class="out" id="brgyOut">Commonwealth,</label>
+                        </td>                           
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="out" id="cityOut">Quezon City.</label>                         
+                            <label class="out" id="provinceOut">Metro Manila</label>                         
+                            <label class="out" id="regionOut">NCR</label>
+                        </td>                            
+                    </tr>                                             
+                </table> 
+            </div>
+            <div class="edit">
+                <button class="btn-edit">Edit</button>
             </div>
         </div>
 
@@ -61,107 +103,113 @@
                 <div class=""><span class="item-name">Bussiness Card</span></div>         
             </div>  
         </div>
+        
+    <div class="main-input" id="mainInput">    
+        <h3>Input Shipping Information</h3>
+        <div class="input-info"> 
 
-       
-        <div class="input-info">
-            <h3>Input Shipping Information</h3>
-
-            <form action=" ">
-                <table>
-                    <tr>
-                        <td><label for="fname">First Name:</label></td>
-                        <td><input type="text" class=" " id="fname" name="firstname" placeholder=" "></td>
-                    </tr>
-                    <tr> 
-                        <td><label for="lname">Last Name:</label></td>
-                        <td><input type="text" class=" " id="lname" name="lastname" placeholder=" "></td>
-                    </tr>
-                    <tr>
-                        <td><label for="contact">Contact:</label></td>
-                        <td><input type="number"class=" " id="contact" name="contactNumber" placeholder=" "></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email:</label></td>
-                        <td><input type="email" class=" " id="email" placeholder=" " name="email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="courier">Courier Provider:</label> </td>
-                            <td>
-                                <select class=" " id="courier" name="courier">
-                                    <option value="lalamove">Lalamove</option>
-                                    <option value="j&t">J&T Express</option>
-                                    <option value="grab">Grab Express</option>
-                                    <option value="lbc">LBC Express</option>
-                                    <option value="jrs">JRS Express</option>
-                                </select>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td><label for="payment">Preferred Payment Method:</label></td>
-                            <td> 
-                                <select class=" " id="payment" name="payment">
-                                    <option value="bank">Bank Transfer</option>
-                                    <option value="gcash">GCash</option>
-                                    <option value="maya">Maya</option>
-                                    <option value="cod">Cash on Delivery</option>
-                                </select>
-                            </td>
-                    </tr>            
-                    <tr>
-                        <td><label for="region">Select Region:</label></td>
-                            <td>
-                                <select class=" " id="region" size="1" name="region">
-                                    <option value="" selected="selected"></option>
-                           
-                                </select>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td><label for="province">Select Province:</label></td>
-                            <td> 
-                                <select class=" " id="province" size="1"  name="province">
-                                    <option value=" " selected="selected"></option>    
-                                </select>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td><label for="city">Select City:</label></td>
-                            <td> 
-                                <select class=" " id="city" size="1" name="city">
-                                    <option value=" " selected="selected"></option>    
-                                </select>
-                            </td>
-                    </tr>                    
-                    <tr>
-                        <td><label for="brgy">Select Barangay:</label></td>
-                            <td> 
-                                <select class=" " id="brgy" size="1" name="brgy">
-                                    <option value=" " selected="selected"></option>    
-                                </select>
-                            </td>
-                    </tr>                 
-                    <tr>
-                        <td><label for="street">Street Address:</label></td>
-                        <td><input type="text" class=" " id="street" name="street" placeholder=" "></td>
-                    </tr>
-                </table>
-
-                <br>                           
-                    <input type="save" value="Save" class=" ">
-                
             
-                  
-                            <label class="note">
+            <div>
+                <form action=" ">
+                    
+                    <table>
+                        <tr>
+                            <td><label class="in" for="fname">Name:</label></td>
+                            <td><input type="text" class=" " id="name" name="name" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="contact">Contact:</label></td>
+                            <td><input type="number"class=" " id="contact" name="contactNumber" placeholder=" "></td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="email">Email:</label></td>
+                            <td><input type="email" class=" " id="email" placeholder=" " name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="courier">Courier Provider:</label> </td>
+                                <td>
+                                    <select class=" " id="courier" name="courier">
+                                        <option value="lalamove">Lalamove</option>
+                                        <option value="j&t">J&T Express</option>
+                                        <option value="grab">Grab Express</option>
+                                        <option value="lbc">LBC Express</option>
+                                        <option value="jrs">JRS Express</option>
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="payment">Preferred Payment Method:</label></td>
+                                <td> 
+                                    <select class=" " id="payment" name="payment">
+                                        <option value="bank">Bank Transfer</option>
+                                        <option value="gcash">GCash</option>
+                                        <option value="maya">Maya</option>
+                                        <option value="cod">Cash on Delivery</option>
+                                    </select>
+                                </td>
+                        </tr>            
+                        <tr>
+                            <td><label class="in" for="region">Select Region:</label></td>
+                                <td>
+                                    <select class=" " id="region" size="1" name="region">
+                                        <option value="" selected="selected"></option>
+                            
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="province">Select Province:</label></td>
+                                <td> 
+                                    <select class=" " id="province" size="1"  name="province">
+                                        <option value=" " selected="selected"></option>    
+                                    </select>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><label class="in" for="city">Select City:</label></td>
+                                <td> 
+                                    <select class=" " id="city" size="1" name="city">
+                                        <option value=" " selected="selected"></option>    
+                                    </select>
+                                </td>
+                        </tr>                    
+                        <tr>
+                            <td><label class="in" for="brgy">Select Barangay:</label></td>
+                                <td> 
+                                    <select class=" " id="brgy" size="1" name="brgy">
+                                        <option value=" " selected="selected"></option>    
+                                    </select>
+                                </td>
+                        </tr>                 
+                        <tr>
+                            <td><label class="in" for="street">Street Address:</label></td>
+                            <td><input type="text" class=" " id="street" name="street" placeholder=" "></td>
+                        </tr>
+                    </table>
+                    <br>
+                                              
+                    <button class="btn-save" value="Save">Save</button>
+                        <div class="note">
+                            <label>
                                 Note: Your data will not be collected by Puppyprint. 
                                 As per clicking the save button, your data will be used as a shipping status for your future purchases.
                                 Your data are only stored into your local browser cache.
                             </label>
-  
-            </form>
-              
-            
+                        </div>
 
+                </form> 
+            </div>
+                <div class="map-in">
+                    <label><b> Click here to point address</b><br><br></label>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1690485042504!2d121.09598417414945!3d14
+                    .589441277351682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7671b164a0b%3A0x4959ba8a60ceca5a!2sICON%20Graphics%20Inc
+                    .!5e0!3m2!1sen!2sph!4v1713668749672!5m2!1sen!2sph" 
+                    width="auto" height="400" style="border:0px; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>   
+                </div>  
         </div>
+    </div>
 
       
         <script src="jscript/index.js"></script>

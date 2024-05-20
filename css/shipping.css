@@ -1,20 +1,68 @@
 
     /*Shipping Information Section */
+
+body{
+    background-color: #f3f8f3;
+}
+
 #si{
     margin-top: 80px;
     text-align: center;
     font-family: 'poppins-light';   
 }
+    /*Shipping Output*/
 
-.info{ 
-    background-color: #eaf5ff;
-    height: 400px;
-    width: auto;  
-    margin-bottom: 10px;
-    margin-top: 20px;
+.info-out{ 
+    background-color: #f0e9e9;
+    height: auto;
+    width: auto;   
+    margin-top: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px; 
     font-family: 'poppins-light';
-
+    display: flex; 
 }
+
+label.out{
+    margin-left: 2px;
+  }
+ 
+.map-out{
+     margin-left: 25px;
+ }
+
+.table-div{
+    margin-left: 25px;
+    display: inline;
+    
+ }
+ .edit{
+    float: right;
+    margin-right: 20px;
+    margin-left: auto;
+    position: relative;
+
+ }
+ .btn-edit{
+     background-color:#f0e9e9;
+     color: rgb(10, 10, 10);
+     border-radius: 20px;
+     margin-right: 20px;
+     width: 60px;
+     height: 30px;
+     text-align: center;
+     font-family: 'poppins-light';
+     font-size: medium;
+     cursor: pointer;
+     border: 2px solid rgb(14, 13, 13); 
+     
+ }
+ .btn-edit:hover {
+    background-color: #5e5e5f;
+    color: white;
+    border-color: black;  
+  }
+
 
     /* Purchased Section */
 .purchased{
@@ -52,8 +100,6 @@
     padding-bottom: 10px;
     font-family: 'poppins-light';
     border-radius: 0px;
-    
-
 }
 
 span.item-name{
@@ -68,37 +114,36 @@ span.item-name{
     /* Input information Section */
 .input-info {
 
-    background-color:rgb(216, 208, 208);
+    background-color:white;
     height: auto;
     width: auto;  
-    margin-bottom: 50px;
-    margin-top: 50px;
     font-family: 'poppins-light';
-    
+    display:flex;
+    padding-top: 20px; 
+    padding-bottom: 50px;   
 }
 
 h3{
-
-    margin-left: 40px;
-    margin-top: 20px;
-    padding-top: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    padding-top: 100px;
+    padding-left: 50px;
+    background-color: rgba(57, 58, 58, 0.219);
 }
 
-
 input[type=text], [type=email],[type=number], select {
-    width: 80%;
+    width: 120%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 0px;
     margin-bottom: 5px;
-    margin-left: 0px;
+    margin-left: 0px;  
+}
 
-    
-  }
-
-  label{
+label.in{
     width: 0%;
     padding: 12px;
     border: 0px solid #ccc;
@@ -106,12 +151,10 @@ input[type=text], [type=email],[type=number], select {
     box-sizing: border-box;
     margin-top: 0px;
     margin-bottom: 16px;
-    margin-left: 40px;
-    
-    
-  }
+    margin-left: 40px;      
+}
   
-  input[type=save] {
+.btn-save{
     background-color: #171817;
     color: white;
     padding: 5px 5px;
@@ -122,33 +165,38 @@ input[type=text], [type=email],[type=number], select {
     font-family: 'poppins-light';
     font-size: medium;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid black; 
+    margin-bottom: 10px;
+    margin-right: 10px;  
+}
 
-    
-  }
-  
-  input[type=save]:hover {
+.btn-save:hover {
     background-color: #f3f8f3;
     color: black;
-    border-color: #020202;
-    
-  }
+    border-color: #020202;  
+}
 
-  .note{
-    margin-left: 40px;
+.note{
+    margin-left: 50px;
     margin-right: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-family: 'poppins-light';
     font-size: small;
     font-weight: bold;
+    text-align:left;
+
+    
+
+}
+.map-in{
+    margin-right: 60px;
+    padding-top: 20px;
     text-align: center;
-
-  }
+    padding-bottom: 20px;
+   
+}
 
  
-
- 
-  
   
  
 

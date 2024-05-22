@@ -686,3 +686,93 @@ html, body {
     display: flex;
     justify-content: center;
 }
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%; /* Set fixed height of 1000px */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 500;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.popup.show {
+    display: flex;
+    opacity: 1; /* Set opacity to 1 when the popup is shown */
+}
+
+.popupview {
+    position: relative;
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'poppins-light';
+    background-color: white;
+    height: 550px;
+    width: 100%;
+    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.3);
+}
+
+.contact-one {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contact-two {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.inside-one {
+    height: auto;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.inside-two {
+    height: auto;
+    width: 750px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inside-one h1 {
+    font-weight: 300;
+}
+
+.head, .tel, .email{
+    margin-left: 20px;
+}
+
+.numbers {
+    margin-top:-10px;
+    margin-left: 40px;
+}

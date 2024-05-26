@@ -1941,4 +1941,16 @@ const regionInfo = {
 
     });
 
+
+    function showEdit(){
+        
+        document.getElementById("mainInput").style.display="block";    
+    }
+    
+      
+    function saveDate(){
+        document.getElementById("mainInput").style.display="none"; 
+        
+    }  
+
 }

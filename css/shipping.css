@@ -183,9 +183,7 @@ label.in{
     font-family: 'poppins-light';
     font-size: small;
     font-weight: bold;
-    text-align:left;
-
-    
+    text-align:left;   
 
 }
 .map-in{
@@ -195,6 +193,9 @@ label.in{
     padding-bottom: 20px;
    
 }
+
+
+
 
  
   

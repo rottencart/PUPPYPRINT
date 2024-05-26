@@ -107,11 +107,9 @@
                         <td><label>Email:</label></td>
                         <td><label id="emailOut"></td>                     
                     </tr>           
-      
                     <tr >   
                         <td class="add-out"><label><br><br>Shipping Address:</label></td>             
-                    </tr>
-                  
+                    </tr> 
                     <tr>
                         <td>
                             <label class="out" id="streetOut">Blk 3, lot 50, phase 5 Rawhouse Subdivision</label>
@@ -128,11 +126,9 @@
                 </table> 
             </div>
             <div class="edit">
-                <button class="btn-edit">Edit</button>
+                <button class="btn-edit" onclick="showEdit()">Edit</button>
             </div>
         </div>     
-    
-
 
         <div class="purchased">
             <h2 id="pi">Purchased Items</h2>
@@ -144,92 +140,92 @@
                 <div class=""><span class="item-name">Bussiness Card</span></div>         
             </div>  
         </div>
-        
-    <div class="main-input" id="mainInput">    
-        <h3>Input Shipping Information</h3>
-        <div class="input-info"> 
 
-            
-            <div>
-                <form action="">
+        <!-- div for input data-->       
+       <div class="main-input" id="mainInput">    
+            <h3>Input Shipping Information</h3>
+            <div class="input-info">           
+                <div>
+                    <form action="">
                     
-                    <table>
-                        <tr>
-                            <td><label class="in" for="name">Name:</label></td>
-                            <td><input type="text" class=" " id="name" name="name" placeholder=" "></td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="contact">Contact:</label></td>
-                            <td><input type="number"class=" " id="contact" name="contactNumber" placeholder=" "></td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="email">Email:</label></td>
-                            <td><input type="email" class=" " id="email" placeholder=" " name="email"></td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="courier">Courier Provider:</label> </td>
-                                <td>
-                                    <select class=" " id="courier" name="courier">
-                                        <option value="lalamove">Lalamove</option>
-                                        <option value="j&t">J&T Express</option>
-                                        <option value="grab">Grab Express</option>
-                                        <option value="lbc">LBC Express</option>
-                                        <option value="jrs">JRS Express</option>
-                                    </select>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="payment">Preferred Payment Method:</label></td>
+                        <table>
+                            <tr>
+                                <td><label class="in" for="name">Name:</label></td>
+                                <td><input type="text" class=" " id="name" name="name" placeholder=" "></td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="contact">Contact:</label></td>
+                                <td><input type="number"class=" " id="contact" name="contactNumber" placeholder=" "></td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="email">Email:</label></td>
+                                <td><input type="email" class=" " id="email" placeholder=" " name="email"></td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="courier">Courier Provider:</label> </td>
+                                    <td>
+                                        <select class=" " id="courier" name="courier">
+                                            <option value=""></option>
+                                            <option value="lalamove">Lalamove</option>
+                                            <option value="j&t">J&T Express</option>
+                                            <option value="grab">Grab Express</option>
+                                            <option value="lbc">LBC Express</option>
+                                            <option value="jrs">JRS Express</option>
+                                        </select>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="payment">Preferred Payment Method:</label></td>
                                 <td> 
                                     <select class=" " id="payment" name="payment">
+                                        <option value=""></option>
                                         <option value="bank">Bank Transfer</option>
                                         <option value="gcash">GCash</option>
                                         <option value="maya">Maya</option>
                                         <option value="cod">Cash on Delivery</option>
                                     </select>
                                 </td>
-                        </tr>            
-                        <tr>
-                            <td><label class="in" for="region">Select Region:</label></td>
-                                <td>
-                                    <select class=" " id="region" size="1" name="region">
-                                        <option value="" selected="selected"></option>
-                            
-                                    </select>
+                            </tr>            
+                            <tr>
+                                <td><label class="in" for="region">Select Region:</label></td>
+                                    <td>
+                                        <select class=" " id="region" size="1" name="region">
+                                            <option value="" selected="selected"></option>
+                                        </select>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="province">Select Province:</label></td>
+                                    <td> 
+                                        <select class=" " id="province" size="1"  name="province">
+                                            <option value=" " selected="selected"></option>    
+                                        </select>
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><label class="in" for="city">Select City:</label></td>
+                                    <td> 
+                                        <select class=" " id="city" size="1" name="city">
+                                            <option value=" " selected="selected"></option>    
+                                        </select>
                                 </td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="province">Select Province:</label></td>
-                                <td> 
-                                    <select class=" " id="province" size="1"  name="province">
-                                        <option value=" " selected="selected"></option>    
-                                    </select>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td><label class="in" for="city">Select City:</label></td>
-                                <td> 
-                                    <select class=" " id="city" size="1" name="city">
-                                        <option value=" " selected="selected"></option>    
-                                    </select>
-                                </td>
-                        </tr>                    
-                        <tr>
-                            <td><label class="in" for="brgy">Select Barangay:</label></td>
-                                <td> 
-                                    <select class=" " id="brgy" size="1" name="brgy">
-                                        <option value=" " selected="selected"></option>    
-                                    </select>
-                                </td>
-                        </tr>                 
-                        <tr>
-                            <td><label class="in" for="street">Street Address:</label></td>
-                            <td><input type="text" class=" " id="street" name="street" placeholder=" "></td>
-                        </tr>
-                    </table>
-                    <br>
+                            </tr>                    
+                            <tr>
+                                <td><label class="in" for="brgy">Select Barangay:</label></td>
+                                    <td> 
+                                        <select class=" " id="brgy" size="1" name="brgy">
+                                            <option value=" " selected="selected"></option>    
+                                        </select>
+                                    </td>
+                            </tr>                 
+                            <tr>
+                                <td><label class="in" for="street">Street Address:</label></td>
+                                <td><input type="text" class=" " id="street" name="street" placeholder=" "></td>
+                            </tr>
+                        </table>
+                        <br>
                                               
-                    <button class="btn-save" value="save" onclick="getData()">Save</button>
+                        <button class="btn-save" value="save" onclick="saveData()" id="save">Save</button>
 
                         <div class="note">
                             <label>
@@ -239,23 +235,26 @@
                             </label>
                         </div>
 
-                </form> 
-            </div>
+                    </form> 
+                </div>
                 <div class="map-in">
                     <label><b> Click here to point address</b><br><br></label>
                     
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1690485042504!2d121.09598417414945!3d14
-                    .589441277351682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7671b164a0b%3A0x4959ba8a60ceca5a!2sICON%20Graphics%20Inc
-                    .!5e0!3m2!1sen!2sph!4v1713668749672!5m2!1sen!2sph" 
-                    width="auto" height="400" style="border:0px; border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1690485042504!2d121.09598417414945!3d14
+                            .589441277351682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7671b164a0b%3A0x4959ba8a60ceca5a!2sICON%20Graphics%20Inc
+                            .!5e0!3m2!1sen!2sph!4v1713668749672!5m2!1sen!2sph" 
+                            width="auto" 
+                            height="400" 
+                            style="border:0px; border-radius: 25px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
                     </iframe>   
                 </div>  
-        </div>
-    </div>
-
-      
+            </div>
+        </div>    
         <script src="jscript/index.js"></script>
-        <script src="jscript/shipping.js"></script>
-           
+        <script src="jscript/shipping.js"></script>       
     </body>
 </html>

@@ -1906,9 +1906,39 @@ const regionInfo = {
             brgy[i]
           );
         }
-    };
-      
+    }
+
+
+
+   document.getElementById("save").addEventListener("click", function(){
+
+        var name = document.getElementById("name").value;
+        var contact = document.getElementById("contact").value;
+        var email = document.getElementById("email").value;
+        var region = document.getElementById("region").value;
+        var province = document.getElementById("province").value;
+        var city = document.getElementById("city").value;
+        var brgy = document.getElementById("brgy").value;
+    
+
+        localStorage.setItem("name",name);
+        localStorage.setItem("contact",contact);
+        localStorage.setItem("email",email);
+        localStorage.setItem("region",region);
+        localStorage.setItem("province",province);
+        localStorage.setItem("city",city);
+        localStorage.setItem("brgy",brgy);
+        
+    
+        document.getElementById("nameOut").innerHTML=localStorage.getItem("name");
+        document.getElementById("contactOut").innerHTML=localStorage.getItem("contact");
+        document.getElementById("emailOut").innerHTML=localStorage.getItem("email");
+        document.getElementById("regionOut").innerHTML=localStorage.getItem("region");
+        document.getElementById("provinceOut").innerHTML=localStorage.getItem("province");
+        document.getElementById("cityOut").innerHTML=localStorage.getItem("city");
+        document.getElementById("brgyOut").innerHTML=localStorage.getItem("brgy");
+        
+
+    });
+
 }
-
-
-

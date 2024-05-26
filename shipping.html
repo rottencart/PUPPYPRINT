@@ -83,8 +83,8 @@
         </div>
 
         <h2 id="si">Shipping Information</h2>
-
-        <div class="info-out"> 
+        
+        <div class="info-out" action=""> 
             
             <div class="map-out">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1690485042504!2d121.09598417414945!3d14
@@ -130,7 +130,9 @@
             <div class="edit">
                 <button class="btn-edit">Edit</button>
             </div>
-        </div>
+        </div>     
+    
+
 
         <div class="purchased">
             <h2 id="pi">Purchased Items</h2>
@@ -149,11 +151,11 @@
 
             
             <div>
-                <form action=" ">
+                <form action="">
                     
                     <table>
                         <tr>
-                            <td><label class="in" for="fname">Name:</label></td>
+                            <td><label class="in" for="name">Name:</label></td>
                             <td><input type="text" class=" " id="name" name="name" placeholder=" "></td>
                         </tr>
                         <tr>
@@ -227,7 +229,8 @@
                     </table>
                     <br>
                                               
-                    <button class="btn-save" value="Save">Save</button>
+                    <button class="btn-save" value="save" onclick="getData()">Save</button>
+
                         <div class="note">
                             <label>
                                 Note: Your data will not be collected by Puppyprint. 
